@@ -174,9 +174,17 @@ public class hw {
 
         Scanner scan = new Scanner(System.in);
         double t = scan.nextDouble();
-        if (t % 5 >= 4 & t % 5 < 5) {System.out.println("красный");}
-        else if (t % 5 >= 3 & t % 5 < 4) {System.out.println("жёлтый");}
-        else if (t % 5 >= 0 & t % 5 < 3) {System.out.println("зелёный");}
+        if (t % 5.0 >= 4 && t % 5.0 < 5) {System.out.println("красный");}
+        else if (t % 5.0 >= 3 && t % 5.0 < 4) {System.out.println("жёлтый");}
+        else if (t % 5.0 >= 0 && t % 5.0 < 3) {System.out.println("зелёный");}
+
+
+
+        double y = t % 5;
+        if (0 <= y && y < 3.0) {System.out.println("зелёный");}
+        else if (3.0 <= y && y < 4.0) {System.out.println("жёлтый");}
+        else if (4.0 <= y && y < 5.0) {System.out.println("красный");}
+
 
         }
 
