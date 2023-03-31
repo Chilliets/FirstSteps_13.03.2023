@@ -58,41 +58,29 @@ public class hw {
 //        Scanner scan = new Scanner(System.in);
 //        int fromConsole = scan.nextInt();
 //        switch (fromConsole) {
-//            case 1:
-//                System.out.println("Winter");
+//            case 1: System.out.println("Winter");
 //                break;
-//            case 2:
-//                System.out.println("Winter");
+//            case 2: System.out.println("Winter");
 //                break;
-//            case 3:
-//                System.out.println("Spring");
+//            case 3: System.out.println("Spring");
 //                break;
-//            case 4:
-//                System.out.println("Spring");
+//            case 4: System.out.println("Spring");
 //                break;
-//            case 5:
-//                System.out.println("Spring");
+//            case 5: System.out.println("Spring");
 //                break;
-//            case 6:
-//                System.out.println("Summer");
+//            case 6: System.out.println("Summer");
 //                break;
-//            case 7:
-//                System.out.println("Summer");
+//            case 7: System.out.println("Summer");
 //                break;
-//            case 8:
-//                System.out.println("Summer");
+//            case 8: System.out.println("Summer");
 //                break;
-//            case 9:
-//                System.out.println("Autumn");
+//            case 9: System.out.println("Autumn");
 //                break;
-//            case 10:
-//                System.out.println("Autumn");
+//            case 10: System.out.println("Autumn");
 //                break;
-//            case 11:
-//                System.out.println("Autumn");
+//            case 11: System.out.println("Autumn");
 //                break;
-//            case 12:
-//                System.out.println("Winter");
+//            case 12: System.out.println("Winter");
 //                break;
 //        }
 
@@ -106,14 +94,9 @@ public class hw {
 
 //        Scanner scan = new Scanner(System.in);
 //        int fromConsole = scan.nextInt();
-//        if (fromConsole > 0) {
-//            System.out.println(fromConsole * 2);
-//        } else if (fromConsole < 0) {
-//            System.out.println(fromConsole + 1);
-//        } else if (fromConsole == 0) {
-//            System.out.println(fromConsole);
-//
-//        }
+//        if (fromConsole > 0) {System.out.println(fromConsole * 2);}
+//        else if (fromConsole < 0) {System.out.println(fromConsole + 1);}
+//        else if (fromConsole == 0) {System.out.println(fromConsole);}
 
 
         /** 6 Написать программу, которая, в зависимости от того числа, которое мы ей подадим (год)
@@ -136,16 +119,10 @@ public class hw {
 
 //        Scanner scan = new Scanner(System.in);
 //        int year = scan.nextInt();
-//        if ((year % 400) == 0) {
-//            System.out.println("количество дней в этом году: 366");
-//        } else if ((year % 100) == 0) {
-//            System.out.println("количество дней в этом году: 365");
-//        } else if ((year % 4) == 0) {
-//            System.out.println("количество дней в этом году: 366");
-//        } else {
-//            System.out.println("количество дней в этом году: 365");
-//
-//        }
+//        if ((year % 400) == 0) {System.out.println("количество дней в этом году: 366");}
+//        else if ((year % 100) == 0) {System.out.println("количество дней в этом году: 365");}
+//        else if ((year % 4) == 0) {System.out.println("количество дней в этом году: 366");}
+//        else {System.out.println("количество дней в этом году: 365");}
 
             /** 7 Объявить три переменных (a, b, c) - стороны предполагаемого треугольника.
              * Определить возможность существования треугольника по сторонам.
@@ -160,32 +137,46 @@ public class hw {
              * то треугольника с такими сторонами не существует.
              */
 
+        int a = 4;
+        int b = 3;
+        int c = 7;
+        if ((a + b) > c && (b + c) > a && (a + c) > b)
+             {System.out.println("Треугольник существует");}
+        else {System.out.println("Треугольник не существует");}
 
-            /** 8 Работа светофора для пешеходов запрограммирована следующим образом:
-             * в начале каждого часа в течение трех минут горит зелёный сигнал,
-             * затем в течение одной минуты - жёлтый,
-             * а потом в течение одной минуты - красный,
-             * затем опять зелёный горит три минуты и т. д.
-             * Подать программе вещественное число t, означающее время в минутах, прошедшее с начала очередного часа.
-             * Определить, сигнал какого цвета горит для пешеходов в этот момент.
-             * Результат вывести на экран в следующем виде:
-             * "зелёный" - если горит зелёный цвет,
-             * "жёлтый" - если горит жёлтый цвет,
-             * "красный" - если горит красный цвет.
-             *
-             * Пример для числа 2.5:
-             * зелёный
-             *
-             * Пример для числа 3:
-             * жёлтый
-             *
-             * Пример для числа 4:
-             * красный
-             *
-             * Пример для числа 5:
-             * зелёный
-             *
-             * */
+
+
+        /** 8 Работа светофора для пешеходов запрограммирована следующим образом:
+         * в начале каждого часа в течение трех минут горит зелёный сигнал,
+         * затем в течение одной минуты - жёлтый,
+         * а потом в течение одной минуты - красный,
+         * затем опять зелёный горит три минуты и т. д.
+         * Подать программе вещественное число t, означающее время в минутах, прошедшее с начала очередного часа.
+         * Определить, сигнал какого цвета горит для пешеходов в этот момент.
+         * Результат вывести на экран в следующем виде:
+         * "зелёный" - если горит зелёный цвет,
+         * "жёлтый" - если горит жёлтый цвет,
+         * "красный" - если горит красный цвет.
+         *
+         * Пример для числа 2.5:
+         * зелёный
+         *
+         * Пример для числа 3:
+         * жёлтый
+         *
+         * Пример для числа 4:
+         * красный
+         *
+         * Пример для числа 5:
+         * зелёный
+         *
+         * */
+
+        Scanner scan = new Scanner(System.in);
+        double t = scan.nextDouble();
+        if (t % 5 >= 4 & t % 5 < 5) {System.out.println("красный");}
+        else if (t % 5 >= 3 & t % 5 < 4) {System.out.println("жёлтый");}
+        else if (t % 5 >= 0 & t % 5 < 3) {System.out.println("зелёный");}
 
         }
 

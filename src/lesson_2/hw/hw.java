@@ -18,25 +18,25 @@ package lesson_2.hw;public class hw {
         int diffOfNumbers = qntBananaFullT - qntBananaHunT;
         System.out.println("The difference in the number of bananas is " + diffOfNumbers);
 
-        int a = 3;
-//        int a = 10;
-        int b = 6;
-//        int b = 12;
-//        int sum = 1 + a + b;
-//        int sum = 2 + a + b;
-        int sum = 3 + a + b;
-//        int sum = 4 + a + b;
+//        int a = 3;
+////        int a = 10;
+//        int b = 6;
+////        int b = 12;
+////        int sum = 1 + a + b;
+////        int sum = 2 + a + b;
+//        int sum = 3 + a + b;
+////        int sum = 4 + a + b;
+//
+//        System.out.println("sum = " + sum);
 
-        System.out.println("sum = " + sum);
-
-        int a = 1;
-        int b = 3;
-        int c = 9;
-        int d = 27;
-
-        int result = -a + b - c + d;
-
-        System.out.println(result);
+//        int a = 1;
+//        int b = 3;
+//        int c = 9;
+//        int d = 27;
+//
+//        int result = -a + b - c + d;
+//
+//        System.out.println(result);
 
 
 
