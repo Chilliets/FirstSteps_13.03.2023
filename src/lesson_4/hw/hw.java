@@ -38,9 +38,39 @@ public class hw {
         /**Вывести на экран таблицу умножения 10х10 используя цикл while.
          Числа разделить пробелом.*/
 
+//        int a = 1;
+//        int b = 1;
+//        while (a <= 10)
+//        {System.out.print(a + " ");
+//            while (b <= 9)
+//            {b++;
+//            System.out.print(b * a + " ");}
+//            a++;
+//            b = 1;
+//            System.out.println();}
 
+        /**Ввести с клавиатуры строку name.
+         Ввести с клавиатуры дату рождения (три числа): y, m, d.
 
+         Вывести на экран текст:
+         "Меня зовут name.
+         Я родился d.m.y"
 
+         Пример вывода:
+         Меня зовут Вася.
+         Я родился 15.2.1988*/
+
+//        System.out.println("Введите имя");
+//        Scanner scan = new Scanner(System.in);
+//        String name = scan.nextLine();
+//        System.out.println("Введите год рождения");
+//        int y = scan.nextInt();
+//        System.out.println("Введите месяц рождения");
+//        int m = scan.nextInt();
+//        System.out.println("Введите день рождения");
+//        int d = scan.nextInt();
+//        System.out.println("Меня зовут " + name);
+//        System.out.println("Я родился " + d + "." + m + "." + y);
 
 
     }

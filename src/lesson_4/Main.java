@@ -56,13 +56,15 @@ public class Main {
 //            i--;        }
 //        System.out.println("BOOOM");
 
-        int i = 0;
-        System.out.println("Start");
+//        int i = 0;
+//        System.out.println("Start");
+//
+//        while (i <= 20) {if (i < 10 || i > 15)
+//            System.out.println(i);
+//            i++;}
+//        System.out.println("Finish");
 
-        while (i <= 20) {if (i < 10 || i > 15)
-            System.out.println(i);
-            i++;}
-        System.out.println("Finish");
+
 
 
 
