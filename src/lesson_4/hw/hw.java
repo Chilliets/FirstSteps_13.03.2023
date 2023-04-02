@@ -16,12 +16,13 @@ public class hw {
 
         /**Используя цикл for вывести на экран прямоугольный треугольник из восьмёрок со сторонами 10 и 10.*/
 
-//        int a = 11;
-//        int b = 0;
-//        for (int i = 0; i < a; i++) {for (int j = 0; j < b; j++)
-//        {System.out.print("8");}
-//            b++;
-//            System.out.println();}
+        int a = 11;
+        int b = 0;
+        for (int i = 0; i < a; i++)
+        {for (int j = 0; j < b; j++)
+        {System.out.print("8");}
+            b++;
+            System.out.println();}
 
         /**Ввести с клавиатуры три числа, вывести на экран среднее из них.
          Т.е. не самое большое и не самое маленькое.
@@ -73,7 +74,15 @@ public class hw {
 //        System.out.println("Я родился " + d + "." + m + "." + y);
 
 
-    }
+//        for (int i = 1; i <= 10; i++) {
+//        System.out.println(i + " *" + " 3 " + "= " + i * 3 ); }
+
+//        Scanner scan = new Scanner(System.in);
+//        int n = scan.nextInt();
+//        int sum = 0;
+//        for (int i = 1; i <= n; i++)
+//            sum = sum + i; System.out.println(sum);
 
 
-}
+
+}}
