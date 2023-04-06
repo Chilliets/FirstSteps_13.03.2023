@@ -28,7 +28,7 @@ package lesson_2.hw;public class hw {
 ////        int sum = 4 + a + b;
 //
 //        System.out.println("sum = " + sum);
-
+//
 //        int a = 1;
 //        int b = 3;
 //        int c = 9;
