@@ -1,5 +1,7 @@
 package lesson_6;
 
+import java.util.Scanner;
+
 public class hw {
     public static void main(String[] args) {
 
@@ -33,5 +35,34 @@ public class hw {
 
          1. Считать 6 строк и заполнить ими массив strings.
          2. Удалить повторяющиеся строки из массива strings, заменив их на null (null должны быть не строками "null").*/
+        Scanner scan = new Scanner(System.in);
+//        String[] a = new String[6];
+//        for (int i = 0; i < 6; i++) {
+//            a[i] = scan.nextLine();
+//        }
+//
+//        for (int i = 0; i < 6; i++) {
+//            for (int j = 0; j < 6; j++) {
+//                if (i != j && a[i] != null && a[i] != null && a[i].equals(a[j]))
+//                    a[i] = null;
+//                a[j] = null;
+//
+//                    System.out.println(a[i]);
+
+        String [] q = new String[5];
+        for (int i = 0; i < 5; i++) {
+            q[i] = scan.nextLine();
+        }
+        for (int i = 0; i < 5; i++) {
+            if(q[i].length() > )
+        }
+
     }
+
 }
+
+
+
+
+
+
