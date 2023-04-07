@@ -1,5 +1,6 @@
 package lesson_5.hw;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class hw {
@@ -14,13 +15,13 @@ public class hw {
          2. Ввести с клавиатуры 8 строк и сохранить их в массив.
          3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.*/
 
-//        String[] array = new String[10];
-//        for (int i = 0; i < 8; i++) {
-//            array[i] = scan.next();
-//        }
-//        for (int i = array.length - 1; i >= 0; i--) {
-//            System.out.println(array[i]);
-//        }
+        String[] array1 = new String[10];
+        for (int i = 0; i < 8; i++) {
+            array1[i] = scan.next();
+        }
+        for (int i = array1.length - 1; i >= 0; i--) {
+            System.out.println(array1[i]);
+        }
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 2");
@@ -30,16 +31,15 @@ public class hw {
          1.2. Считай с консоли 10 чисел и заполни ими массив
          2. Найти максимальное число из элементов массива.*/
 
-//        int[] array1 = new int[10];
-//        for (int n = 0; n < array1.length; n++) {
-//            array1[n] = scan.nextInt();
-//        }
-//        int max = array1[0];
-//        for (int n = 0; n < array1.length; n++) {
-//            if (array1[n] > max)
-//                max = array1[n];
-//        }
-//        System.out.println(max);
+        int[] array2 = new int[10];
+        for (int n = 0; n < array2.length; n++) {
+            array2[n] = scan.nextInt();
+        }
+        int high = array2[0];
+        for (int n = 0; n < array2.length; n++) {
+            if (array2[n] > high) high = array2[n];
+        }
+        System.out.println(high);
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 3");
@@ -57,26 +57,11 @@ public class hw {
             word[i] = scan.nextLine();
         }
         int[] number = new int[10];
-
         for (int i = 0; i < word.length; i++) {
-            int x = number[i] + word[i];
-            System.out.println(" on index  " + number[i] + " set value " + word[i]);
+            number[i] = word[i].length();
+            System.out.println(" on index  " + number[i] + " set value " + word[i].length());
         }
 
-
-        int[] number = new int[10];
-
-        number[j] = word.length;
-
-        {
-
-            for (int j = 0; j < number.length; j++)
-                if ( int a = number[j]);
-
-            number[j] = word.length;
-
-            System.out.println(number[j]);
-        }
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 4");
@@ -86,15 +71,15 @@ public class hw {
          2. Ввести с клавиатуры 10 чисел и записать их в массив.
          3. Вывести на экран элементы массива в обратном порядке, каждое значение выводить с новой строки..*/
 
-//        int array2 [] = new int[10];
-//        for (int i = 0; i < array2.length; i++) {
-//            array2[i] = scan.nextInt();
-//
-//        }
-//        for (int i = array2.length - 1; i >= 0; i--) {
-//            System.out.println(array2[i]);
-//
-//        }
+        int array3[] = new int[10];
+        for (int i = 0; i < array3.length; i++) {
+            array3[i] = scan.nextInt();
+
+        }
+        for (int i = array3.length - 1; i >= 0; i--) {
+            System.out.println(array3[i]);
+
+        }
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 5");
@@ -105,22 +90,21 @@ public class hw {
          3. Создать два массива на 10 чисел каждый.
          4. Скопировать большой массив в два маленьких: половину чисел в первый маленький, вторую половину во второй маленький.
          5. Вывести второй маленький массив на экран, каждое значение выводить с новой строки.*/
+        //        int[] all = {5, 4, 3, 2, 1, 6, 7, 8, 9, 11, 12, 13, 65, 34, 23, 19, 98, 76, 64, 81};
 
-//        int[] all = new int[20];
-//        for (int i = 0; i < all.length; i++)
-//            all[i] = scan.nextInt();
-//
-//        int[] a = new int[10];
-//        int[] b = new int[10];
-//        for (int i = 0; i < 10; i++) {
-//            if (all[i] != a[i])
-//                a[i] = all[i];
-//        }
-//        for (int j = 0; j <= 10; j++) {
-//            if (all[j + 10] != b[j])
-//                b[j] = all[j + 10];
-//            System.out.println(b[j]);
-//        }
+        int[] all = new int[20];
+        for (int i = 0; i < all.length; i++)
+            all[i] = scan.nextInt();
+
+        int[] a = new int[10];
+        int[] b = new int[10];
+        for (int i = 0; i < 10; i++) {
+            if (all[i] != a[i]) a[i] = all[i];
+        }
+        for (int j = 0; j < 10; j++) {
+            if (all[j + 10] != b[j]) b[j] = all[j + 10];
+            System.out.println(b[j]);
+        }
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 6");
@@ -132,32 +116,31 @@ public class hw {
          * Вывести на экран максимальное и минимальное числа через пробел.
          */
 
-//        int[] a = new int[20];
-//        for (
-//                int i = 0;
-//                i < a.length; i++) {
-//            a[i] = scan.nextInt();
-//        }
-//
-//        int max = a[0];
-//        int min = a[0];
-//
-//        {
-//            for (int i = 0; i < a.length; i++) {
-//                if (a[i] > max) {
-//                    max = a[i];
-//
-//                }
-//            }
-//            {
-//                for (int j = 0; j < a.length; j++) {
-//                    if (a[j] < min) {
-//                        min = a[j];
-//                    }
-//                }
-//                System.out.print(max + " " + min);
-//            }
-//        }
+        int[] x = new int[20];
+        for (int i = 0; i < x.length; i++) {
+            x[i] = scan.nextInt();
+        }
+
+        int max = x[0];
+        int min = x[0];
+
+        {
+            for (int i = 0; i < x.length; i++) {
+                if (x[i] > max) {
+                    max = x[i];
+
+                }
+            }
+            {
+                for (int j = 0; j < x.length; j++) {
+                    if (x[j] < min) {
+                        min = x[j];
+                    }
+                }
+                System.out.println(max + " " + min);
+            }
+        }
+
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 7");
 
@@ -165,36 +148,27 @@ public class hw {
          * Задача: Написать программу, которая вводит с клавиатуры 20 чисел
          * и выводит их в убывающем порядке.
          */
+//        int[] array = {5, 4, 3, 2, 1, 6, 7, 8, 9, 11, 12, 13, 65, 34, 23, 19, 98, 76, 64, 81};
 
-//        int[] arr = new int[20];
-//        for (
-//                int i = 0;
-//                i < arr.length; i++) {
-//            arr[i] = scan.nextInt();
+        int[] array4 = new int[20];
+        for (int i = 0; i < array4.length; i++) {
+            array4[i] = scan.nextInt();
+        }
+        boolean isSorted = false;
+        int buf;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = array4.length - 1; i > 0; i--) {
+                if (array4[i] > array4[i - 1]) {
+                    isSorted = false;
+
+                    buf = array4[i];
+                    array4[i] = array4[i - 1];
+                    array4[i - 1] = buf;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array4));
 
     }
-//        for (int i = arr.; i < arr.length; i++) {
-//            if (arr[i] < arr[i+1])
-//                int a = arr[i];
-//            arr[i] = arr[i+1];
-//            arr[i+1] = a;
-
-
 }
-
-
-//         word [0] = "q";
-//            word [1] = "qq";
-//            word [2] = "qqq";
-//            word [3] = "qqqq";
-//            word [4] = "qqqqq";
-//            word [5] = "qqqqqq";
-//            word [6] = "qqqqqqq";
-//            word [7] = "qqqqqqqq";
-//            word [8] = "qqqqqqqqq";
-//            word [9] = "qqqqqqqqqq";
-
-
-
-
-
