@@ -15,6 +15,7 @@ public class hw {
          2. Ввести с клавиатуры 8 строк и сохранить их в массив.
          3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.*/
 
+        System.out.println("Введите строки");
         String[] array1 = new String[10];
         for (int i = 0; i < 8; i++) {
             array1[i] = scan.next();
@@ -31,6 +32,7 @@ public class hw {
          1.2. Считай с консоли 10 чисел и заполни ими массив
          2. Найти максимальное число из элементов массива.*/
 
+        System.out.println("Введите числа");
         int[] array2 = new int[10];
         for (int n = 0; n < array2.length; n++) {
             array2[n] = scan.nextInt();
@@ -39,7 +41,7 @@ public class hw {
         for (int n = 0; n < array2.length; n++) {
             if (array2[n] > high) high = array2[n];
         }
-        System.out.println(high);
+        System.out.println(high + " - максимальное число из элементов массива");
 
         System.out.println("-----------------------------------------------------");
         System.out.println("TASK 3");
@@ -51,15 +53,15 @@ public class hw {
          4. В каждую ячейку массива чисел записать длину строки из массива строк,
          индекс/номер ячейки которой совпадает с текущим индексом из массива чисел.*/
 
+        System.out.println("Введите строки");
         String[] word = new String[10];
-
         for (int i = 0; i < word.length; i++) {
             word[i] = scan.nextLine();
         }
         int[] number = new int[10];
         for (int i = 0; i < word.length; i++) {
             number[i] = word[i].length();
-            System.out.println(" on index  " + number[i] + " set value " + word[i].length());
+            System.out.println(" индекс " + number[i] + " номер " + word[i].length());
         }
 
 
@@ -71,6 +73,7 @@ public class hw {
          2. Ввести с клавиатуры 10 чисел и записать их в массив.
          3. Вывести на экран элементы массива в обратном порядке, каждое значение выводить с новой строки..*/
 
+        System.out.println("Введите числа");
         int array3[] = new int[10];
         for (int i = 0; i < array3.length; i++) {
             array3[i] = scan.nextInt();
@@ -91,6 +94,7 @@ public class hw {
          4. Скопировать большой массив в два маленьких: половину чисел в первый маленький, вторую половину во второй маленький.
          5. Вывести второй маленький массив на экран, каждое значение выводить с новой строки.*/
 
+        System.out.println("Введите числа");
         int[] all = new int[20];
         for (int i = 0; i < all.length; i++)
             all[i] = scan.nextInt();
@@ -115,6 +119,7 @@ public class hw {
          * Вывести на экран максимальное и минимальное числа через пробел.
          */
 
+        System.out.println("Введите числа");
         int[] x = new int[20];
         for (int i = 0; i < x.length; i++) {
             x[i] = scan.nextInt();
@@ -148,6 +153,7 @@ public class hw {
          * и выводит их в убывающем порядке.
          */
 
+        System.out.println("Введите числа");
         int[] array4 = new int[20];
         for (int i = 0; i < array4.length; i++) {
             array4[i] = scan.nextInt();
