@@ -107,13 +107,138 @@ public class additional_tasks {
 //                if (x )
 
 
+        Scanner scan = new Scanner(System.in);
+//        System.out.println("enter");
+//        String[] array = new String[10];
+//        for (int i = 0; i < 8; i++) {
+//            array[i]= scan.nextLine();
+//        }
+//        for (int i = array.length-1; i >= 0; i--) {
+//            System.out.println(array[i]);
+//
+//        }
 
+//        int[] x = new int[10];
+//        System.out.println("enter numbers");
+//        for (int i = 0; i < 10; i++) {
+//            x[i] = scan.nextInt();
+//        }
+//        int buf = x[0];
+//        for (int i = 0; i < x.length; i++) {
+//            if (x[i] > buf)
+//                buf = x[i];
+//            System.out.println("maximum score is " + buf);
+//
+//        }
+//        int[]q=new int[10];
+//        System.out.println("enter scores");
+//        for (int i = 0; i < q.length; i++) {
+//            q[i]= scan.nextInt();
+//        }
+//        int max = q[0];
+//        for (int i = 0; i < q.length;i++) {
+//            if (q[i]>max)
+//                max=q[i];
+//        }
+//        System.out.println("maximum score is " + max);
 
+//        int[] arrTen = new int[10];
+//        System.out.println("enter the numbers please");
+//        for (int i = 0; i < arrTen.length; i++) {
+//            arrTen[i] = scan.nextInt();
+//        }
+//        for (int i = arrTen.length - 1; i >= 0; i--) {
+//            System.out.println(arrTen[i]);
+//        }
+
+//        String[]word=new String[10];
+//        System.out.println("enter the words please");
+//        for (int i = 0; i < word.length; i++) {
+//            word[i]= scan.nextLine();
+//        }
+//        int[]numbers = new int[10];
+//        for (int i = 0; i < word.length; i++) {
+//            numbers[i]=word[i].length();
+//            System.out.println("в слове " + word[i] + " - " + numbers[i] + " букв");
+//        }
+
+//        String[] array = new String[10];
+//        for (int i = 0; i < 8; i++) {
+//            array[i] = scan.nextLine();
+//        }
+//        for (int i = array.length - 1; i >= 0; i--) {
+//            System.out.println(array[i]);
+//        }
+
+//        int [] scores = new int[10];
+//        for (int i = 0; i < scores.length; i++) {
+//            scores[i] = scan.nextInt();
+//        }
+//        int buf = scores[0];
+//        for (int i = 0; i < scores.length-1; i++) {
+//            if (scores[i] > buf)
+//                buf = scores[i];
+//        }
+//        System.out.println("maximum score is " + buf);
+
+//        String[] array = new String[10];
+//        int[] number = new int[10];
+//        for (int i = 0; i < array.length; i++) {
+//            array[i] = scan.nextLine();
+//        }
+//        for (int i = 0; i < array.length; i++) {
+//            number[i] = array[i].length();
+//        }
+//        {
+//            for (int i = 0; i < array.length; i++) {
+//
+//
+//                System.out.println("v slove " + array[i] + " - " + number[i] + " bukv");
+//            }
+//        }
+
+//        t[] main = new int[20];
+//        for (int i = 0; i < main.length; i++) {
+//            main[i] = scan.nextInt();
+//        }
+//        int[] a = new int[10];
+//        int[] b = new int[10];
+//        for (int i = 0; i < 10; i++) {
+//            a[i] = main[i];
+//        }
+//        for (int i = 0; i < 10; i++) {
+//            if (main[i+10] != b[i]) b[i] = main[i+10];
+//            System.out.println(b[i]);
+//
+//        }
+
+        /**
+         * Создать массив на 20 чисел.
+         * Заполнить его числами с клавиатуры.
+         * Найти максимальное и минимальное числа в массиве.
+         * Вывести на экран максимальное и минимальное числа через пробел.
+         */
+
+//        int[] masiv = new int[20];
+//        for (int i = 0; i < masiv.length; i++) {
+//            masiv[i]= scan.nextInt();
+//        }
+//        int max = 0;
+//        int min = masiv[0];
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i]>max)
+//                max=masiv[i];
+//        }
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i]<min)
+//                min=masiv[i];
+//        }
+//        System.out.println("maximum number is " + max + " and minimum number is " + min);
 
     }
 
-
 }
+
 
 
 

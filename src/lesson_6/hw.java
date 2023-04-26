@@ -3,51 +3,103 @@ package lesson_6;
 import java.util.Scanner;
 
 public class hw {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println("-----------------------------------------------------");
+        System.out.println("TASK 1");
 
         /**
          * Задача: Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter).
-         Потом она конвертирует строки в верхний регистр (Мама превращается в МАМА) и выводит их на экран.
+         Потом она конвертирует строки в верхний регистр (Мама превращается в МАМА) и выводит их на экран.*/
 
-         Новая задача: Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter).
+
+        String string = "hello";
+        Scanner scan = new Scanner(System.in);
+        int a = 0;
+        String[] string1 = new String[10000];
+        while (!string.isEmpty()) {
+            System.out.println("Enter string");
+            string = scan.nextLine();
+            if (!string.isEmpty()) {
+                string1[a] = string;
+                a++;
+            }
+        }
+        for (int i = 0; i < a; i++) {
+            System.out.println(string1[i].toUpperCase());
+        }
+
+        System.out.println("-----------------------------------------------------");
+        System.out.println("TASK 2");
+
+        /**Новая задача: Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter).
          Если в строке чётное число букв, строка удваивается, если нечётное - утраивается.
-         Программа выводит слова на экран.
+         Программа выводит слова на экран.*/
 
-         2
+        String strings = "x";
+        while (!strings.isEmpty()) {
+            System.out.println("Enter string");
+            strings = scan.nextLine();
+            if (strings.length() % 2 == 0) {
+                System.out.println(strings.concat(strings));
+            } else System.out.println(strings.concat(strings).concat(strings));
+        }
 
-         Ввести 5 строк с консоли, найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
+        System.out.println("-----------------------------------------------------");
+        System.out.println("TASK 3");
 
-         3
+        /**2
+         Ввести 5 строк с консоли, найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.*/
 
-         1. Создать массив на 10 строк.
-         2. Ввести с клавиатуры 8 строк и сохранить их в массив.
-         3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.
+        String[] stroki = new String[5];
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter string");
+            stroki[i] = scan.nextLine();
+        }
+        String max = "null";
+        String min = stroki[0];
+        for (int i = 1; i < stroki.length; i++) {
+            if (stroki[i].length() > max.length()) {
+                max = stroki[i];
+            }
+            if (stroki[i].length() < min.length()) {
+                min = stroki[i];
+            }
+        }
+        System.out.println("Most long string is " + max + " with length " +  max.length());
+        System.out.println("Most short string is " + min + " with length " +  min.length());
 
-         4
 
-         1. Создать массив на 10 строк.
-         2. Создать массив на 10 чисел.
-         3. Ввести с клавиатуры 10 строк, заполнить ими массив строк.
-         4. В каждую ячейку массива чисел записать длину строки из массива строк, индекс/номер ячейки
-         которой совпадает с текущим индексом из массива чисел.
+        System.out.println("-----------------------------------------------------");
+        System.out.println("TASK 4");
 
-         5
-
+        /**5
          1. Считать 6 строк и заполнить ими массив strings.
          2. Удалить повторяющиеся строки из массива strings, заменив их на null (null должны быть не строками "null").*/
-//        Scanner scan = new Scanner(System.in);
-//        String[] a = new String[6];
-//        for (int i = 0; i < 6; i++) {
-//            a[i] = scan.nextLine();
-//        }
-//        for (int i = 0; i < 6; i++)
-//            if ()
-//
-//                System.out.println(a[i]);
-//            }
-//        }
+
+        String[] masivStrok = new String[6];
+        for (int i = 0; i < masivStrok.length; i++) {
+            masivStrok[i] = scan.nextLine();
+        }
+        for (int i = 0; i < masivStrok.length - 1; i++) {
+            for (int j = i + 1; j < masivStrok.length; j++)
+                if (masivStrok[i] != null && masivStrok[i].equals(masivStrok[j])) {
+                    masivStrok[j] = null;
+                }
+        }
+        for (int i = 0; i < masivStrok.length; i++) {
+            System.out.println(masivStrok[i]);
+        }
+
+
     }
+
 }
+
+
+
+
+
 
 
 
