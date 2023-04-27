@@ -85,6 +85,7 @@ public class hw {
             for (int j = i + 1; j < masivStrok.length; j++)
                 if (masivStrok[i] != null && masivStrok[i].equals(masivStrok[j])) {
                     masivStrok[j] = null;
+                    masivStrok[i] = null;
                 }
         }
         for (int i = 0; i < masivStrok.length; i++) {

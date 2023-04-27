@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class additional_tasks {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 //        {
 //            Scanner scan = new Scanner(System.in);
@@ -235,9 +235,42 @@ public class additional_tasks {
 //        }
 //        System.out.println("maximum number is " + max + " and minimum number is " + min);
 
-    }
 
+//        int a = 10;
+//        while (a > 0){
+//        Thread.sleep(1000);
+//        System.out.println(a);
+//        a--;
+//        }
+//        System.out.println("boom");
+
+        System.out.println("Enter mail");
+        String email = scan.nextLine();
+        int soba4ka = email.indexOf('@');
+        if (soba4ka == -1) {
+            System.out.println("not correct, try again");
+            return;
+        }
+        String[] split = email.split("@");
+        if (split.length != 2) {
+            System.out.println("not correct, too much @");
+            return;
+        }
+        String beforeDog = split[0];
+        String afterDog = split[1];
+        if (beforeDog.startsWith(".") || beforeDog.endsWith(".")){
+            System.out.println("not correct, too much dots");
+            return;
+        }
+        if (afterDog.startsWith(".") || afterDog.endsWith(".")){
+            System.out.println("not correct, too much dots");
+            return;}
+        System.out.println("correct");
+
+    }
 }
+
+
 
 
 
