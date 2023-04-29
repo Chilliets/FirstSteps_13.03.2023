@@ -19,8 +19,18 @@ public class Main {
         boolean result3 = okolo5.truFols5(0);
         System.out.println(result3);
 
-        Metod cubAndSum = new Metod();
-        int result4 = cubAndSum.vozvediSlozhi(0,0);
+        Metod kvadrat1 = new Metod();
+        System.out.println("Операция возведения в квадрат, а потом сложения");
+        System.out.println("Введите первое число");
+        int result4 = kvadrat1.vozvedi1(0);
+
+        Metod kvadrat2 = new Metod();
+        System.out.println("Введите второе число");
+        int result5 = kvadrat2.vozvedi2(0);
+
+        Metod slozhiIh = new Metod();
+        int result6 = slozhiIh.slozhi(result4, result5);
+        System.out.println("Сумма чисел, возведенных в квадрат равна " + result6);
 
 
     }

@@ -29,10 +29,19 @@ public class Metod {
         }
     }
 
-    public int vozvediSlozhi(int e, int f) {
-        e=scan.nextInt();
-        f=scan.nextInt();
-        return
+    public int vozvedi1(int e) {
+        e = scan.nextInt();
+        return e * e;
+    }
+
+    public int vozvedi2(int f) {
+        f = scan.nextInt();
+        return f * f;
+    }
+
+    public int slozhi(int result4, int result5) {
+        return result4 + result5;
+
     }
 
 
